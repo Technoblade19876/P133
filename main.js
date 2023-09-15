@@ -44,10 +44,12 @@ if(draw_apple == "set"){
         image(apple, x, y, 50, 50);
     }
     document.getElementById("status").innerHTML = to_number+ "Apples Drawn";
-    speak_data = to_number + "Apples drawn";
-    speak();
     draw_apple = "";
+
+
+
     var synth = window.speechSynthesis;
+    speak_data = to_number + "Apples drawn";
     var utterThis = new SpeechSynthesisUtterance(speak_data);
     synth.speak(utterThis);
 }
