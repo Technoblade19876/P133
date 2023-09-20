@@ -38,7 +38,7 @@ recognition.onresult = function(event){
 
 function draw(){
 if(draw_apple == "set"){
-    for(var i = 0; i <= to_number; i++) {
+    for(var i = 0; i < to_number; i++) {
         x = Math.round(Math.random() * 700);
         y = Math.round(Math.random() * 400);
         image(apple, x, y, 50, 50);
